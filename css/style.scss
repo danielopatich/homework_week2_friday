@@ -1,0 +1,57 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+$visual-grid: true;
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url(https://raw.githubusercontent.com/theironyard-frontend-nashville/assignments/cohort2/week02/thur/assets/bg.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.wrapper {
+  @include outer-container;
+  position: relative;
+
+}
+
+// <!-- end of header -->
+
+section.hero {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/top-image.png?raw=true);
+}
+// <!-- end of hero -->
+// <!-- end of content -->
+
+#content {
+  display: block;
+  // @include span-columns(8);
+
+}
+
+// <!-- end of skaters -->
+.skaters {
+  display: block;
+}
+
+.lance {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-4.png?raw=true);
+}
+
+.rodney {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-3.png?raw=true);
+}
+
+.steve {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true);
+}
+
+.tommy {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-2.png?raw=true);
+}
+// <!-- end of boards -->
+// <!-- end of contact -->
