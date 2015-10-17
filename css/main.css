@@ -29,9 +29,18 @@ body:before {
   box-sizing: border-box; }
 
 body {
-  background-image: url(https://raw.githubusercontent.com/theironyard-frontend-nashville/assignments/cohort2/week02/thur/assets/bg.jpg);
+  background-image: url("../assets/bg.jpg");
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  max-width: 100%; }
+
+main {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  main:last-child {
+    margin-right: 0; }
 
 .wrapper {
   max-width: 68em;
@@ -43,14 +52,80 @@ body {
     content: "";
     display: table; }
 
+#masthead {
+  display: block;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #masthead::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 section.hero {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/top-image.png?raw=true); }
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: 10px solid white; }
+  section.hero:last-child {
+    margin-right: 0; }
+  section.hero div.hero-photoman {
+    height: 340px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0;
+    background-image: url("../assets/top-image.png");
+    background-position: -150px -150px; }
+    section.hero div.hero-photoman:last-child {
+      margin-right: 0; }
+    section.hero div.hero-photoman .hero-logo {
+      margin: 50px; }
+      section.hero div.hero-photoman .hero-logo .hero-grid {
+        background-image: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/grid.png?raw=true);
+        background-position: -150px 100px;
+        background-repeat: repeat-y; }
 
 #content {
   display: block; }
 
-.skaters {
-  display: block; }
+article.content-posts {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 10px; }
+  article.content-posts:last-child {
+    margin-right: 0; }
+  article.content-posts .post {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    height: 350px;
+    background: #FAFAFA;
+    text-align: left;
+    padding: 20px; }
+    article.content-posts .post:last-child {
+      margin-right: 0; }
+    article.content-posts .post button.readMore {
+      background: none;
+      border: none;
+      color: #B12B32; }
+      article.content-posts .post button.readMore h4 {
+        padding-left: 96px; }
+
+section.skaters {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  overflow: auto; }
+  section.skaters:last-child {
+    margin-right: 0; }
 
 .lance {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-4.png?raw=true); }
@@ -61,5 +136,31 @@ section.hero {
 .steve {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true); }
 
-.tommy {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-2.png?raw=true); }
+figure.boards {
+  background: #fff;
+  margin: 0;
+  padding: 25px 40px;
+  box-shadow: 2px 4px #ccc;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  figure.boards:last-child {
+    margin-right: 0; }
+  figure.boards img {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 7.44167%; }
+    figure.boards img:last-child {
+      margin-right: 0; }
+
+article.contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background: #fff;
+  margin-top: 10px; }
+  article.contact:last-child {
+    margin-right: 0; }

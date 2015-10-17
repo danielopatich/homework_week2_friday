@@ -8,35 +8,91 @@ $visual-grid: true;
 
 
 body {
-  background-image: url(https://raw.githubusercontent.com/theironyard-frontend-nashville/assignments/cohort2/week02/thur/assets/bg.jpg);
+  background-image: url('../assets/bg.jpg');
   background-repeat: no-repeat;
   position: relative;
+  max-width: 100%;
 }
 
+main {
+  @include span-columns(12);
+}
 .wrapper {
   @include outer-container;
   position: relative;
 
 }
 
+#masthead {
+  display: block;
+  @include outer-container;
+}
+
 // <!-- end of header -->
 
+
 section.hero {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/top-image.png?raw=true);
+  display: block;
+  @include span-columns(12);
+  border: 10px solid white;
+  div.hero-photoman {
+    height: 340px;
+    @include span-columns(12);
+    @include omega();
+    background-image: url('../assets/top-image.png');
+    background-position: -150px -150px;
+    .hero-logo {
+      margin: 50px;
+      .hero-grid {
+        background-image: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/grid.png?raw=true);
+        background-position: -150px 100px;
+        background-repeat: repeat-y;
+
+      }
+    }
+  }
 }
+
+
 // <!-- end of hero -->
-// <!-- end of content -->
+
 
 #content {
   display: block;
   // @include span-columns(8);
-
 }
 
-// <!-- end of skaters -->
-.skaters {
-  display: block;
+article.content-posts {
+  @include span-columns(12);
+  margin-top: 10px;
+  .post {
+    @include span-columns(4 of 12);
+    height: 350px;
+    background: #FAFAFA;
+    text-align: left;
+    padding: 20px;
+    button.readMore {
+      background: none;
+      border: none;
+      color: #B12B32;
+      h4 {
+        padding-left: 96px;
+      }
+    }
+  }
 }
+// <!-- end of content -->
+
+section.skaters {
+  @include span-columns(12);
+  overflow: auto;
+}
+
+// MAKE TOMMY FIRST SO OTHER //
+
+// REMEMBER TO NEST IN THIS ORDER --LEFT,TOP,BOTTOM...RIGHT LAST-- 4OF8,4OF8,8OF12,4OF12
+
+// SKATER IMAGE LINKS //
 
 .lance {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-4.png?raw=true);
@@ -49,9 +105,25 @@ section.hero {
 .steve {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true);
 }
+// <!-- end of skaters -->
 
-.tommy {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-2.png?raw=true);
+figure.boards {
+  background: #fff;
+  margin: 0;
+  padding: 25px 40px;
+  box-shadow: 2px 4px #ccc;
+
+  @include span-columns(12);
+    img {
+      @include span-columns(1 of 10);
+    }
 }
+
 // <!-- end of boards -->
+
+article.contact {
+  @include span-columns(12);
+  background: #fff;
+  margin-top: 10px;
+}
 // <!-- end of contact -->

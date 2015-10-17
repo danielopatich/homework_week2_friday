@@ -39,8 +39,11 @@
 
       <section class="hero">
         <div class="hero-photoman">
-        </div>
-        <div class="hero-logo">
+          <div class="hero-logo">
+            <div class="hero-grid">
+              <img src="https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/peralta-logo.png?raw=true"/>
+            </div>
+          </div>
         </div>
       </section>
 <!-- end of hero -->
@@ -57,7 +60,7 @@
                 &amp; Casino Las Vegas on Saturday at the Green Acres Estate in
                 Beverly Hills.
               </p>
-              <button type="button" name="button"><h4>[ Read More ]</h4></button>
+              <button type="button" class="readMore" name="readMore"><h4>[ Read More ]</h4></button>
             </div>
             <div class="post">
               <h3>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h3>
@@ -68,7 +71,7 @@
                 his love of the open skateboarding community and how the unique
                 environments it plays in drive the creation of new tricks - fostering...
               </p>
-              <button type="button" name="button"><h4>[ Read More ]</h4></button>
+              <button type="button" class="readMore" name="readMore"><h4>[ Read More ]</h4></button>
             </div>
             <div class="post">
               <h3>Ray Barbee Talks 'Ban This'</h3>
@@ -80,29 +83,35 @@
                 we sit down Ray Barbee, one of the smoothest guys to ever step
                 on a skateboard and Chris' childhood idol...
               </p>
-              <button type="button" name="button"><h4>[ Read More ]</h4></button>
+              <button type="button" class="readMore" name="readMore"><h4>[ Read More ]</h4></button>
             </div>
           </article>
         </div>
 <!-- end of content -->
 
           <section class="skaters">
-            <div class="lance">
-              <span>LANCE MOUNTAIN</span>
+            <div class="skateTop">
+              <div class="lance">
+                <span>LANCE MOUNTAIN</span>
+              </div>
+              <div class="rodney">
+                <span>RODNEY MULLEN</span>
+              </div>
             </div>
-            <div class="rodney">
-              <span>RODNEY MULLEN</span>
+            <div class="skateBottom">
+              <div class="steve">
+                <span>STEVE CABALLERO</span>
+              </div>
             </div>
-            <div class="steve">
-              <span>STEVE CABALLERO</span>
-            </div>
-            <div class="tommy">
-              <span>TOMMY GUERRERO</span>
+            <div class="sideTommy">
+              <div class="tommy">
+                <span>TOMMY GUERRERO</span>
+              </div>
             </div>
           </section>
 <!-- end of skaters -->
 
-          <figure>
+          <figure class="boards">
             <img src="https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8-1.png?raw=true" alt="" />
             <img src="https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8-10.png?raw=true" alt="" />
             <img src="https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8-2.png?raw=true" alt="" />
@@ -134,11 +143,10 @@
               <input type="text" name="name" value="" placeholder="NAME">
               <input type="email" name="name" value="" placeholder="E-MAIL">
               <textarea name="paragraph_text" cols="30" rows="5" placeholder="YOUR MESSAGE"></textarea>
-              <input type="Submit" name="name" value="SUBMIT">
+              <input type="submit" name="name" value="SUBMIT">
             </form>
           </article>
 <!-- end of contact -->
-
 
 
       </main>
