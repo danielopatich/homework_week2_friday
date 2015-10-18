@@ -29,7 +29,7 @@ body:before {
   box-sizing: border-box; }
 
 body {
-  background-image: url("../assets/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg.jpg");
   background-repeat: no-repeat;
   position: relative;
   max-width: 100%; }
@@ -52,15 +52,68 @@ main {
     content: "";
     display: table; }
 
-#masthead {
-  display: block;
+header.masthead {
+  height: 200px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  #masthead::after {
+  header.masthead::after {
     clear: both;
     content: "";
     display: table; }
+
+.buttonsTop {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .buttonsTop:last-child {
+    margin-right: 0; }
+
+div.facebook {
+  height: 60px;
+  width: 60px;
+  background: #455A95;
+  padding: 13px 20px; }
+
+div.rss {
+  height: 60px;
+  width: 60px;
+  background: #CB8F3C;
+  padding: 12px 17px; }
+
+div.twitter {
+  height: 60px;
+  width: 60px;
+  background: #6B8EC5;
+  padding: 12px 14px; }
+
+div.youtube {
+  height: 60px;
+  width: 60px;
+  background: #B03931;
+  padding: 12px 15px; }
+
+button.menu-tabs {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  button.menu-tabs:last-child {
+    margin-right: 0; }
+
+.social-wrap a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  opacity: .6;
+  text-align: center; }
+
+button.button {
+  height: 60px;
+  width: 60px;
+  background: #B03931;
+  padding: 12px 15px; }
 
 section.hero {
   display: block;
@@ -68,7 +121,8 @@ section.hero {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  border: 10px solid white; }
+  border: 10px solid white;
+  box-shadow: 2px 4px #ccc; }
   section.hero:last-child {
     margin-right: 0; }
   section.hero div.hero-photoman {
@@ -85,6 +139,7 @@ section.hero {
     section.hero div.hero-photoman .hero-logo {
       margin: 50px; }
       section.hero div.hero-photoman .hero-logo .hero-grid {
+        opacity: .6;
         background-image: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/grid.png?raw=true);
         background-position: -150px 100px;
         background-repeat: repeat-y; }
@@ -97,7 +152,8 @@ article.content-posts {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-top: 10px; }
+  margin-top: 70px;
+  margin-bottom: 50px; }
   article.content-posts:last-child {
     margin-right: 0; }
   article.content-posts .post {
@@ -108,7 +164,8 @@ article.content-posts {
     height: 350px;
     background: #FAFAFA;
     text-align: left;
-    padding: 20px; }
+    padding: 20px;
+    box-shadow: 2px 4px #ccc; }
     article.content-posts .post:last-child {
       margin-right: 0; }
     article.content-posts .post button.readMore {
@@ -123,7 +180,8 @@ section.skaters {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  overflow: auto; }
+  overflow: auto;
+  margin-bottom: 35px; }
   section.skaters:last-child {
     margin-right: 0; }
 
@@ -137,7 +195,7 @@ section.skaters {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true); }
 
 figure.boards {
-  background: #fff;
+  background: #F9F9F9;
   margin: 0;
   padding: 25px 40px;
   box-shadow: 2px 4px #ccc;
@@ -151,16 +209,60 @@ figure.boards {
     float: left;
     display: block;
     margin-right: 2.84259%;
-    width: 7.44167%; }
+    width: 7.44167%;
+    opacity: .75; }
     figure.boards img:last-child {
       margin-right: 0; }
 
 article.contact {
+  display: block;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background: #fff;
-  margin-top: 10px; }
+  background: #F9F9F9;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  box-shadow: 2px 4px #ccc; }
   article.contact:last-child {
     margin-right: 0; }
+  article.contact .contact-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding: 35px; }
+    article.contact .contact-info:last-child {
+      margin-right: 0; }
+
+#social-links {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  opacity: .6; }
+
+button.fa-facebook {
+  background: #3E3E3E; }
+
+button.fa-rss {
+  background: #818181; }
+
+button.fa-twitter {
+  background: #3E3E3E; }
+
+button.fa-youtube {
+  background: #3E3E3E; }
+
+form.subscribe {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-right: 0;
+  margin-left: 8.5298%;
+  padding: 40px; }
+  form.subscribe:last-child {
+    margin-right: 0; }
+  form.subscribe input, form.subscribe text-area {
+    margin-top: 5px;
+    margin-bottom: 10px; }

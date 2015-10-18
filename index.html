@@ -8,27 +8,40 @@
     <title></title>
   </head>
   <body>
-    <header id=masthead>
-      <nav id="site-nav" class="site-head">
-        <div class="nav-wrap">
-          <ol class="nav-links">
-            <li>Subscribe</li>
-          </ol>
+    <header class=masthead>
+
+      <div class="buttonsTop">
+
+        <nav id="site-nav" class="site-head">
+          <div class="nav-wrap">
+            <ol class="nav-links">
+              <li>Subscribe</li>
+            </ol>
+          </div>
+          <div class="social-wrap">
+            <div class="facebook">
+              <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <div class="rss">
+              <a href="#" class="fa fa-rss"></a>
+            </div>
+            <div class="twitter">
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+            <div class="youtube">
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-nav">
+          <div class="menu-nav-buttons">
+            <button type="button" name="news" class="menu-tabs"> -- SK8T NEWS -- </button>
+            <button type="button" name="boarders" class="menu-tabs"> -- SKATEBOARDERS -- </button>
+            <button type="button" name="design" class="menu-tabs"> -- BOARD DESIGN -- </button>
+            <button type="button" name="contact" class="menu-tabs"> -- CONTACT US -- </button>
+          </div>
         </div>
-        <div class="social-wrap">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-rss"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-        </div>
-      </nav>
-      <div class="menu-nav">
-        <ul id="menu-nav-buttons">
-          <button type="button" name="news"> -- SK8T NEWS -- </button>
-          <button type="button" name="boarders"> -- SKATEBOARDERS -- </button>
-          <button type="button" name="design"> -- BOARD DESIGN -- </button>
-          <button type="button" name="contact"> -- CONTACT US -- </button>
-        </ul>
+
       </div>
     </header>
 <!-- end of header -->
@@ -37,15 +50,15 @@
       <main>
 
 
-      <section class="hero">
-        <div class="hero-photoman">
-          <div class="hero-logo">
-            <div class="hero-grid">
-              <img src="https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/peralta-logo.png?raw=true"/>
+        <section class="hero">
+          <div class="hero-photoman">
+            <div class="hero-logo">
+              <div class="hero-grid">
+                <img src="https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/peralta-logo.png?raw=true"/>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 <!-- end of hero -->
         <div id="content">
 
@@ -126,25 +139,29 @@
 <!-- end of boards -->
 
           <article class="contact">
-            <h1>Contact Us for More Information</h1>
-              <p>
-                Bull shark snake eel grouper quillback; squirrelfish
-                butterflyfish spinyfin herring Long-finned sand
-                diver: coley New Zealand sand diver? Freshwater eel--armored
-                gurnard red snapper sandburrower deep sea bonefish.
-              </p>
-            <ol id="social-links">
-              <button type="button" name="Facebook"></button>
-              <button type="button" name="RSS"></button>
-              <button type="button" name="Twitter"></button>
-              <button type="button" name="YouTube"></button>
-            </ol>
-            <form class="subscribe" action="index.html" method="post">
-              <input type="text" name="name" value="" placeholder="NAME">
-              <input type="email" name="name" value="" placeholder="E-MAIL">
-              <textarea name="paragraph_text" cols="30" rows="5" placeholder="YOUR MESSAGE"></textarea>
-              <input type="submit" name="name" value="SUBMIT">
-            </form>
+            <div class="contact-info">
+              <h1>Contact Us for More Information</h1>
+                <p>
+                  Bull shark snake eel grouper quillback; squirrelfish
+                  butterflyfish spinyfin herring Long-finned sand
+                  diver: coley New Zealand sand diver? Freshwater eel--armored
+                  gurnard red snapper sandburrower deep sea bonefish.
+                </p>
+              <ol id="social-links">
+                <button type="button" name="Facebook" class="fa fa-facebook"></button>
+                <button type="button" name="RSS" class="fa fa-rss"></button>
+                <button type="button" name="Twitter" class="fa fa-twitter"></button>
+                <button type="button" name="YouTube" class="fa fa-youtube"></button>
+              </ol>
+            </div>
+            <div class="contact-form">
+              <form class="subscribe" action="index.html" method="post">
+                <input type="text" name="name" value="" placeholder="NAME">
+                <input type="email" name="name" value="" placeholder="E-MAIL">
+                <textarea name="paragraph_text" cols="40" rows="5" placeholder="YOUR MESSAGE"></textarea>
+                <input type="submit" name="name" value="SUBMIT">
+              </form>
+            </div>
           </article>
 <!-- end of contact -->
 
