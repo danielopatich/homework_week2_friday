@@ -11,6 +11,9 @@
   font-family: 'myriad';
 }
 
+// $mobile: new-breakpoint(max-width 480px);
+// $desktop: new-breakpoint(min-width 1140px);
+
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/bg.jpg');
@@ -361,7 +364,19 @@ form.subscribe {
    padding: 8px 60px 5px;
    box-shadow: !important none;
  }
-
+//
+// div.skateArrow {
+//    height: 70px;
+//    width: 80px;
+//    background: #B12B32;
+//    padding: 0 0 0 0;
+//    margin: 0 0 0 0;
+//    a {
+//      text-align: center;
+//      text-decoration: none;
+//      color: #fff;
+//    }
+//  }
 
 // input.text, .email {
 //   width: 80%;
