@@ -30,7 +30,7 @@ main {
 // END OF MAIN STUFF //
 
 header.masthead {
-  height: 200px;
+  height: 130px;
   @include outer-container;
 }
 
@@ -38,31 +38,59 @@ header.masthead {
   @include span-columns(12);
 }
 
+div.nav-wrap {
+  color: #fff;
+}
+
+nav#site-nav.site-head {
+  @include outer-container;
+  div.nav-wrap {
+    @include span-columns(4 of 8);
+    .social-wrap {
+    @include span-columns(4 of 8);
+    }
+  }
+}
+
+ul.nav-links {
+  float: right;
+}
+
+.social-wrap a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  opacity: .6;
+  text-align: center;
+  margin-bottom: 5px;
+}
 
 button.facebook {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #455A95;
   padding: 13px 20px;
+  border-left: 3px dotted #fff;
+  border-spacing: 3px;
 }
 
 button.rss {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #CB8F3C;
   padding: 12px 17px;
 }
 
 button.twitter {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #6B8EC5;
   padding: 12px 14px;
 }
 
 button.youtube {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #B03931;
   padding: 12px 15px;
 }
@@ -80,16 +108,6 @@ button.menu-tabs {
   box-shadow: !important none;
   margin-bottom: 15px;
 }
-
-.social-wrap a {
-  text-decoration: none;
-  font-size: 36px;
-  color: #fff;
-  opacity: .6;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
 
 button.button {
   height: 60px;
@@ -165,12 +183,32 @@ article.content-posts {
   font-size: .8em;
 }
 // <!-- end of content -->
+section.skaters {
+  @include span-columns(12);
+  .skateBottom {
+    @include span-columns(8 of 12);
+    .tommy {
+      @include span-columns(4 of 12);
+    }
+  }
+}
+
 
 section.skaters {
   @include span-columns(12);
   overflow: auto;
   margin-bottom: 35px;
+  .skateTop {
+    @include span-columns(8);
+    .lance {
+      @include span-columns(4 of 8);
+      .rodney {
+        @include span-columns(4 of 8);
+      }
+    }
+  }
 }
+
 
 // MAKE TOMMY FIRST SO OTHER //
 
@@ -180,14 +218,63 @@ section.skaters {
 
 .lance {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-4.png?raw=true);
+  height: 220px;
+  border: 3px solid #fff;
+  background-position: 22em -1em;
+  span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 85px 0px 0px 10px;
+  }
 }
 
 .rodney {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-3.png?raw=true);
+  height: 220px;
+  border: 3px solid #fff;
+  background-position: -6em -1em;
+  span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 85px 0px 0px 10px;
+    font-weight: bold;
+  }
 }
 
 .steve {
   background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true);
+  height: 220px;
+  border: 3px solid #fff;
+  background-size: 47em 23em;
+  background-position: -0em -6em;
+  span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 90px 0px 0px 220px;
+  }
+}
+
+.tommy {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-2.png?raw=true);
+  height: 440px;
+  border: 3px solid #fff;
+  background-position: 20em -2em;
+  span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 200px 0px 0px 0px;
+  }
 }
 // <!-- end of skaters -->
 

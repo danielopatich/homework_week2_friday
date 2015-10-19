@@ -39,7 +39,7 @@ main {
     display: table; }
 
 header.masthead {
-  height: 200px;
+  height: 130px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -56,27 +56,66 @@ header.masthead {
   .buttonsTop:last-child {
     margin-right: 0; }
 
+div.nav-wrap {
+  color: #fff; }
+
+nav#site-nav.site-head {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  nav#site-nav.site-head::after {
+    clear: both;
+    content: "";
+    display: table; }
+  nav#site-nav.site-head div.nav-wrap {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 48.21067%; }
+    nav#site-nav.site-head div.nav-wrap:last-child {
+      margin-right: 0; }
+    nav#site-nav.site-head div.nav-wrap .social-wrap {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      nav#site-nav.site-head div.nav-wrap .social-wrap:last-child {
+        margin-right: 0; }
+
+ul.nav-links {
+  float: right; }
+
+.social-wrap a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  opacity: .6;
+  text-align: center;
+  margin-bottom: 5px; }
+
 button.facebook {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #455A95;
-  padding: 13px 20px; }
+  padding: 13px 20px;
+  border-left: 3px dotted #fff;
+  border-spacing: 3px; }
 
 button.rss {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #CB8F3C;
   padding: 12px 17px; }
 
 button.twitter {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #6B8EC5;
   padding: 12px 14px; }
 
 button.youtube {
-  height: 60px;
-  width: 60px;
+  height: 59px;
+  width: 59px;
   background: #B03931;
   padding: 12px 15px; }
 
@@ -95,14 +134,6 @@ button.menu-tabs {
   padding: 8px 20px 5px;
   box-shadow: !important none;
   margin-bottom: 15px; }
-
-.social-wrap a {
-  text-decoration: none;
-  font-size: 36px;
-  color: #fff;
-  opacity: .6;
-  text-align: center;
-  margin-bottom: 5px; }
 
 button.button {
   height: 60px;
@@ -183,20 +214,107 @@ section.skaters {
   float: left;
   display: block;
   margin-right: 2.35765%;
+  width: 100%; }
+  section.skaters:last-child {
+    margin-right: 0; }
+  section.skaters .skateBottom {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    section.skaters .skateBottom:last-child {
+      margin-right: 0; }
+    section.skaters .skateBottom .tommy {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      section.skaters .skateBottom .tommy:last-child {
+        margin-right: 0; }
+
+section.skaters {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
   width: 100%;
   overflow: auto;
   margin-bottom: 35px; }
   section.skaters:last-child {
     margin-right: 0; }
+  section.skaters .skateTop {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    section.skaters .skateTop:last-child {
+      margin-right: 0; }
+    section.skaters .skateTop .lance {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      section.skaters .skateTop .lance:last-child {
+        margin-right: 0; }
+      section.skaters .skateTop .lance .rodney {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        section.skaters .skateTop .lance .rodney:last-child {
+          margin-right: 0; }
 
 .lance {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-4.png?raw=true); }
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-4.png?raw=true);
+  height: 220px;
+  border: 3px solid #fff;
+  background-position: 22em -1em; }
+  .lance span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 85px 0px 0px 10px; }
 
 .rodney {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-3.png?raw=true); }
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-3.png?raw=true);
+  height: 220px;
+  border: 3px solid #fff;
+  background-position: -6em -1em; }
+  .rodney span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 85px 0px 0px 10px;
+    font-weight: bold; }
 
 .steve {
-  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true); }
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-1.png?raw=true);
+  height: 220px;
+  border: 3px solid #fff;
+  background-size: 47em 23em;
+  background-position: 0em -6em; }
+  .steve span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 90px 0px 0px 220px; }
+
+.tommy {
+  background: url(https://github.com/theironyard-frontend-nashville/assignments/blob/cohort2/week02/thur/assets/sk8er-2.png?raw=true);
+  height: 440px;
+  border: 3px solid #fff;
+  background-position: 20em -2em; }
+  .tommy span {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 200px 0px 0px 0px; }
 
 figure.boards {
   background: #F9F9F9;
