@@ -1,9 +1,14 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
-$visual-grid: true;
+// $visual-grid: true;
 @import "../bower_components/neat/app/assets/stylesheets/neat";
+
+@font-face {
+  font-family: 'myriad';
+  src: url(file:///Users/danielopatich1/dev/homework/week2/friday/fonts/myriad.otf); }
 
 * {
   box-sizing: border-box;
+  font-family: 'myriad';
 }
 
 
@@ -34,28 +39,28 @@ header.masthead {
 }
 
 
-div.facebook {
+button.facebook {
   height: 60px;
   width: 60px;
   background: #455A95;
   padding: 13px 20px;
 }
 
-div.rss {
+button.rss {
   height: 60px;
   width: 60px;
   background: #CB8F3C;
   padding: 12px 17px;
 }
 
-div.twitter {
+button.twitter {
   height: 60px;
   width: 60px;
   background: #6B8EC5;
   padding: 12px 14px;
 }
 
-div.youtube {
+button.youtube {
   height: 60px;
   width: 60px;
   background: #B03931;
@@ -67,13 +72,24 @@ button.menu-tabs {
   @include span-columns(3 of 12);
 }
 
+.menu-tabs {
+  background: #B12B32;
+  color: #fff;
+  float: right;
+  padding: 8px 20px 5px;
+  box-shadow: !important none;
+  margin-bottom: 15px;
+}
+
 .social-wrap a {
   text-decoration: none;
   font-size: 36px;
   color: #fff;
   opacity: .6;
   text-align: center;
+  margin-bottom: 5px;
 }
+
 
 button.button {
   height: 60px;
@@ -125,6 +141,7 @@ article.content-posts {
     height: 350px;
     background: #FAFAFA;
     text-align: left;
+    font-size: 15px;
     padding: 20px;
     box-shadow: 2px 4px #ccc;
     button.readMore {
@@ -136,6 +153,16 @@ article.content-posts {
       }
     }
   }
+}
+
+.post h3 {
+ color: #323230;
+ font-size: 1.55em;
+}
+
+.post h5 {
+  color: #A4A4A4;
+  font-size: .8em;
 }
 // <!-- end of content -->
 
@@ -183,12 +210,19 @@ article.contact {
   display: block;
   @include span-columns(12);
   background: #F9F9F9;
+  color: #444444;
+  font-size: .9em;
   margin-top: 40px;
   margin-bottom: 100px;
   box-shadow: 2px 4px #ccc;
+  padding: 0px;
   .contact-info {
     @include span-columns(6);
-    padding: 35px;
+    padding: 10px 30px;
+    h3 {
+      font-size: 30px;
+      color: #383934;
+    }
   }
 }
 
@@ -196,23 +230,28 @@ article.contact {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  opacity: .6;
+  position: relative;
+  padding: 0px;
 }
 
 button.fa-facebook {
   background: #3E3E3E;
+  opacity: .9;
 }
 
 button.fa-rss {
   background: #818181;
+  opacity: .9;
 }
 
 button.fa-twitter {
   background: #3E3E3E;
+  opacity: .9;
 }
 
 button.fa-youtube {
   background: #3E3E3E;
+  opacity: .9;
 }
 
 
@@ -221,11 +260,21 @@ form.subscribe {
   @include omega();
   @include shift(1);
   padding: 40px;
+  width: 35.16157%;
   input, text-area {
     margin-top: 5px;
     margin-bottom: 10px;
+    box-shadow: 2px 0px 2px 2px #ccc;
   }
 }
+ .submit-style {
+   background: #B12B32;
+   color: #fff;
+   float: right;
+   padding: 8px 60px 5px;
+   box-shadow: !important none;
+ }
+
 
 // input.text, .email {
 //   width: 80%;

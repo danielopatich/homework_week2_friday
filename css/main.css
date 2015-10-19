@@ -6,27 +6,13 @@ html {
 *::before {
   box-sizing: inherit; }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 68em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
+@font-face {
+  font-family: 'myriad';
+  src: url(file:///Users/danielopatich1/dev/homework/week2/friday/fonts/myriad.otf); }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'myriad'; }
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg.jpg");
@@ -70,25 +56,25 @@ header.masthead {
   .buttonsTop:last-child {
     margin-right: 0; }
 
-div.facebook {
+button.facebook {
   height: 60px;
   width: 60px;
   background: #455A95;
   padding: 13px 20px; }
 
-div.rss {
+button.rss {
   height: 60px;
   width: 60px;
   background: #CB8F3C;
   padding: 12px 17px; }
 
-div.twitter {
+button.twitter {
   height: 60px;
   width: 60px;
   background: #6B8EC5;
   padding: 12px 14px; }
 
-div.youtube {
+button.youtube {
   height: 60px;
   width: 60px;
   background: #B03931;
@@ -102,12 +88,21 @@ button.menu-tabs {
   button.menu-tabs:last-child {
     margin-right: 0; }
 
+.menu-tabs {
+  background: #B12B32;
+  color: #fff;
+  float: right;
+  padding: 8px 20px 5px;
+  box-shadow: !important none;
+  margin-bottom: 15px; }
+
 .social-wrap a {
   text-decoration: none;
   font-size: 36px;
   color: #fff;
   opacity: .6;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5px; }
 
 button.button {
   height: 60px;
@@ -164,6 +159,7 @@ article.content-posts {
     height: 350px;
     background: #FAFAFA;
     text-align: left;
+    font-size: 15px;
     padding: 20px;
     box-shadow: 2px 4px #ccc; }
     article.content-posts .post:last-child {
@@ -174,6 +170,14 @@ article.content-posts {
       color: #B12B32; }
       article.content-posts .post button.readMore h4 {
         padding-left: 96px; }
+
+.post h3 {
+  color: #323230;
+  font-size: 1.55em; }
+
+.post h5 {
+  color: #A4A4A4;
+  font-size: .8em; }
 
 section.skaters {
   float: left;
@@ -221,9 +225,12 @@ article.contact {
   margin-right: 2.35765%;
   width: 100%;
   background: #F9F9F9;
+  color: #444444;
+  font-size: .9em;
   margin-top: 40px;
   margin-bottom: 100px;
-  box-shadow: 2px 4px #ccc; }
+  box-shadow: 2px 4px #ccc;
+  padding: 0px; }
   article.contact:last-child {
     margin-right: 0; }
   article.contact .contact-info {
@@ -231,27 +238,35 @@ article.contact {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    padding: 35px; }
+    padding: 10px 30px; }
     article.contact .contact-info:last-child {
       margin-right: 0; }
+    article.contact .contact-info h3 {
+      font-size: 30px;
+      color: #383934; }
 
 #social-links {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  opacity: .6; }
+  position: relative;
+  padding: 0px; }
 
 button.fa-facebook {
-  background: #3E3E3E; }
+  background: #3E3E3E;
+  opacity: .9; }
 
 button.fa-rss {
-  background: #818181; }
+  background: #818181;
+  opacity: .9; }
 
 button.fa-twitter {
-  background: #3E3E3E; }
+  background: #3E3E3E;
+  opacity: .9; }
 
 button.fa-youtube {
-  background: #3E3E3E; }
+  background: #3E3E3E;
+  opacity: .9; }
 
 form.subscribe {
   float: left;
@@ -260,9 +275,18 @@ form.subscribe {
   width: 31.76157%;
   margin-right: 0;
   margin-left: 8.5298%;
-  padding: 40px; }
+  padding: 40px;
+  width: 35.16157%; }
   form.subscribe:last-child {
     margin-right: 0; }
   form.subscribe input, form.subscribe text-area {
     margin-top: 5px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    box-shadow: 2px 0px 2px 2px #ccc; }
+
+.submit-style {
+  background: #B12B32;
+  color: #fff;
+  float: right;
+  padding: 8px 60px 5px;
+  box-shadow: !important none; }
